@@ -174,181 +174,145 @@ sup{font-size:.62em;vertical-align:.6em;line-height:0}
 <script>
 const SECTIONS=[
 {n:1,color:'#1f5cff',emoji:'🔍',title:'Expand each expression and find the highest common factor (HCF)',
- rule:'<b>Rule reminder:</b> write each term as prime factors × letters, then circle what is in <i>both</i>. Multiply the circled bits to get the HCF. E.g. $8x^2 = 2·2·2·x·x$.',
  cards:[
  {label:'Q1 · Box 1',prob:'8x^2 {and} 12xy',steps:[
   ['8x^2 = 2·2·2·x·x','Break 8 into prime factors and write x² as x·x.'],
   ['12xy = 2·2·3·x·y','Do the same for 12xy, where 12 = 2·2·3.'],
   ['{Both have} 2·2·x','Spot what appears in both lists: two 2s and one x.'],
-  ['{HCF} = 2·2·x = 4x','Multiply the shared factors together to get the answer.']],
-  quiz:{q:'{HCF of} 6x^2 {and} 9xy',a:'3x',why:'6x² = 2·3·x·x and 9xy = 3·3·x·y, so they share 3·x.',w:[['3','The letter x is shared too, so it belongs in the HCF.'],['3x^2','Only one x is in 9xy, so you can only share one x.'],['3xy','There is no y in 6x², so y cannot be shared.']]}},
+  ['{HCF} = 2·2·x = 4x','Multiply the shared factors together to get the answer.']],  quiz:{q:'{What is the HCF of} 8x^2 {and} 12xy{?}',a:'4x',why:'8x² = 2·2·2·x·x and 12xy = 2·2·3·x·y, so they share 2·2·x = 4x.',w:[['2x','Both numbers share 2·2 (that is 4), not just one 2.'],['4x^2','12xy has only one x, so only one x is shared.'],['4xy','8x² has no y, so y is not shared.']]}},
  {label:'Q1 · Box 2',prob:'24y {and} 36y^2',steps:[
   ['24y = 2·2·2·3·y','Break 24 into prime factors, then add the y.'],
   ['36y^2 = 2·2·3·3·y·y','36 = 2·2·3·3 and y² is y·y.'],
   ['{Both have} 2·2·3·y','Shared: two 2s, one 3 and one y.'],
-  ['{HCF} = 2·2·3·y = 12y','Multiply the shared factors: 2×2×3 = 12.']],
-  quiz:{q:'{HCF of} 18y {and} 27y^2',a:'9y',why:'18y = 2·3·3·y and 27y² = 3·3·3·y·y, so they share 3·3·y = 9y.',w:[['9','Do not forget the shared letter y.'],['9y^2','18y only has one y, so only one y is shared.'],['3y','3 does go into both, but 9 is bigger and also goes into both.']]}},
+  ['{HCF} = 2·2·3·y = 12y','Multiply the shared factors: 2×2×3 = 12.']],  quiz:{q:'{What is the HCF of} 24y {and} 36y^2{?}',a:'12y',why:'24y = 2·2·2·3·y and 36y² = 2·2·3·3·y·y, so they share 2·2·3·y = 12y.',w:[['12y^2','24y has only one y, so only one y is shared.'],['6y','24 and 36 share 2·2·3 = 12, not just 6.'],['12','The letter y is shared too, so it belongs in the HCF.']]}},
  {label:'Q1 · Box 3',prob:'6a^3b {and} 15ab^2',steps:[
   ['6a^3b = 2·3·a·a·a·b','6 = 2·3, a³ is three a’s, and one b.'],
   ['15ab^2 = 3·5·a·b·b','15 = 3·5, one a, and b² is b·b.'],
   ['{Both have} 3·a·b','Shared: one 3, one a and one b.'],
-  ['{HCF} = 3·a·b = 3ab','Multiply the shared factors together.']],
-  quiz:{q:'{HCF of} 10a^2b {and} 4ab^3',a:'2ab',why:'10a²b = 2·5·a·a·b and 4ab³ = 2·2·a·b·b·b, so they share 2·a·b.',w:[['2a^2b','4ab³ has only one a, so only one a is shared.'],['2ab^3','10a²b has only one b, so only one b is shared.'],['2','The letters a and b are shared too.']]}}]},
+  ['{HCF} = 3·a·b = 3ab','Multiply the shared factors together.']],  quiz:{q:'{What is the HCF of} 6a^3b {and} 15ab^2{?}',a:'3ab',why:'6a³b = 2·3·a·a·a·b and 15ab² = 3·5·a·b·b, so they share 3·a·b.',w:[['3a^2b','15ab² has only one a, so only one a is shared.'],['3ab^2','6a³b has only one b, so only one b is shared.'],['3','The letters a and b are shared too.']]}}]},
 {n:2,color:'#7a3cff',emoji:'✂️',title:'Expand and simplify',
- rule:'<b>Rule reminder:</b> simplify the numbers first. Then for each letter: top power − bottom power. Whatever is left stays where it was (top or bottom).',
  cards:[
  {label:'Q2 · Box 1',prob:'[2a^2|6ab]',steps:[
   ['[2|6] = [1|3]','Numbers first: divide top and bottom by 2.'],
   ['[a^2|a] = a','Top power minus bottom power: 2 − 1 = 1, so one a is left on top.'],
   ['b {stays below}','There is no b on top to cancel it, so it stays underneath.'],
-  ['[a|3b]','Put it all together.']],
-  quiz:{q:'{Simplify} [3b^2|9ab]',a:'[b|3a]',why:'3/9 = 1/3, b²÷b = b (on top), and a stays on the bottom.',w:[['[b^2|3a]','b² ÷ b leaves b, not b². Subtract the powers: 2 − 1 = 1.'],['[3b|9a]','Remember to simplify the numbers: 3/9 = 1/3.'],['[a|3b]','The b ends up on top and the a on the bottom, not the other way round.']]}},
+  ['[a|3b]','Put it all together.']],  quiz:{q:'{Simplify} [2a^2|6ab]',a:'[a|3b]',why:'2/6 = 1/3, a² ÷ a = a on top, and b stays on the bottom.',w:[['[a|3]','The b has nothing to cancel with, so it stays on the bottom.'],['[a^2|3b]','a² ÷ a leaves a, not a². Subtract the powers: 2 − 1 = 1.'],['[3b|a]','The a is on top and the b stays underneath, not the other way round.']]}},
  {label:'Q2 · Box 2',prob:'[6m^3|9m]',steps:[
   ['[6|9] = [2|3]','Divide top and bottom by 3.'],
   ['[m^3|m] = m^2','Subtract the powers: 3 − 1 = 2 (m on its own is m¹).'],
-  ['[2m^2|3]','Put the number part and the letter part together.']],
-  quiz:{q:'{Simplify} [4k^4|10k]',a:'[2k^3|5]',why:'4/10 = 2/5 and k⁴ ÷ k = k³.',w:[['[2k^4|5]','k on the bottom takes one k off the top: 4 − 1 = 3.'],['[4k^3|10]','The numbers can still be simplified: 4/10 = 2/5.'],['[2k^5|5]','You add powers when multiplying. When dividing you subtract.']]}},
+  ['[2m^2|3]','Put the number part and the letter part together.']],  quiz:{q:'{Simplify} [6m^3|9m]',a:'[2m^2|3]',why:'6/9 = 2/3 and m³ ÷ m = m².',w:[['[2m^3|3]','The m on the bottom takes one m off the top: 3 − 1 = 2.'],['[2m^4|3]','You added the powers. Subtract them when dividing.'],['[6m^2|9]','Simplify the numbers too: 6/9 = 2/3.']]}},
  {label:'Q2 · Box 3',prob:'[x^2y^4|xy^2]',steps:[
   ['[x^2|x] = x','Subtract the powers: 2 − 1 = 1.'],
   ['[y^4|y^2] = y^2','Subtract the powers: 4 − 2 = 2.'],
-  ['xy^2','Both letters are left on top, so write them together.']],
-  quiz:{q:'{Simplify} [a^3b^5|ab^2]',a:'a^2b^3',why:'a: 3 − 1 = 2, b: 5 − 2 = 3.',w:[['a^4b^7','You added the powers. For division, subtract them.'],['a^2b^5','You only did the a. Do the b as well: 5 − 2 = 3.'],['a^3b^3','You only did the b. Do the a as well: 3 − 1 = 2.']]}},
+  ['xy^2','Both letters are left on top, so write them together.']],  quiz:{q:'{Simplify} [x^2y^4|xy^2]',a:'xy^2',why:'x: 2 − 1 = 1 and y: 4 − 2 = 2, both left on top.',w:[['x^2y^2','x² ÷ x leaves x, not x². Subtract: 2 − 1 = 1.'],['x^3y^6','You added the powers. Subtract them when dividing.'],['y^2','x² ÷ x leaves one x, so it does not cancel completely.']]}},
  {label:'Q2 · Box 4',prob:'[10a^2bc^3|12abc^2]',steps:[
   ['[10|12] = [5|6]','Numbers first: divide top and bottom by 2.'],
   ['[a^2|a] = a','2 − 1 = 1, so one a is left on top.'],
   ['[b|b] = 1','Same power on top and bottom, so b cancels completely.'],
   ['[c^3|c^2] = c','3 − 2 = 1, so one c is left on top.'],
-  ['[5ac|6]','Put the leftovers together.']],
-  quiz:{q:'{Simplify} [8x^3yz^2|12xyz]',a:'[2x^2z|3]',why:'8/12 = 2/3, x: 3 − 1 = 2, y cancels, z: 2 − 1 = 1.',w:[['[2x^2yz|3]','The y on top and y on the bottom cancel out completely.'],['[8x^2z|12]','Simplify the numbers too: 8/12 = 2/3.'],['[2x^4z^3|3]','You added the powers. Subtract them when dividing.']]}}]},
+  ['[5ac|6]','Put the leftovers together.']],  quiz:{q:'{Simplify} [10a^2bc^3|12abc^2]',a:'[5ac|6]',why:'10/12 = 5/6, a: 2 − 1 = 1, b cancels, c: 3 − 2 = 1.',w:[['[5abc|6]','b is on the top and the bottom with the same power, so it cancels.'],['[10ac|12]','Simplify the numbers too: 10/12 = 5/6.'],['[5a^3bc^5|6]','You added the powers. Subtract them when dividing.']]}}]},
 {n:3,color:'#e83e8c',emoji:'✖️',title:'Calculate, expand and simplify',
- rule:'<b>Rule reminder:</b> multiplying fractions = top × top and bottom × bottom, then simplify. Dividing = <i>keep</i> the first, <i>change</i> ÷ to ×, <i>flip</i> the second.',
  cards:[
  {label:'Q3 · Top left',prob:'[10|x] × [x|2]',steps:[
   ['[10|x] × [x|2] = [10x|2x]','Multiply tops together and bottoms together.'],
   ['[10x|2x] = [10|2]','The x on top and the x on the bottom cancel.'],
-  ['5','10 ÷ 2 = 5.']],
-  quiz:{q:'{Simplify} [12|x] × [x|3]',a:'4',why:'Top 12x, bottom 3x. The x cancels and 12 ÷ 3 = 4.',w:[['36','You multiplied 12 × 3. Divide instead after cancelling the x.'],['[4|x^2]','The x on top cancels the x on the bottom completely.'],['9','You subtracted. Cancelling means dividing: 12 ÷ 3.']]}},
+  ['5','10 ÷ 2 = 5.']],  quiz:{q:'{Simplify} [10|x] × [x|2]',a:'5',why:'Top 10x, bottom 2x. The x cancels and 10 ÷ 2 = 5.',w:[['20','Cancel the x, then divide 10 ÷ 2. Do not multiply by 2.'],['5x','The x on top and the x on the bottom cancel completely.'],['12','Multiply the fractions, then cancel. Do not add 10 + 2.']]}},
  {label:'Q3 · Top middle',prob:'[4x|y] · [xy|6x]',steps:[
   ['[4x|y] · [xy|6x] = [4x^2y|6xy]','Top: 4x·xy = 4x²y. Bottom: y·6x = 6xy.'],
   ['[4|6] = [2|3]','Simplify the numbers: divide by 2.'],
   ['[x^2|x] = x {and} [y|y] = 1','Subtract powers for x, and y cancels.'],
-  ['[2x|3]','Put the leftovers together.']],
-  quiz:{q:'{Simplify fully} [3x|y] · [xy|6x]',a:'[x|2]',why:'Product is 3x²y / 6xy. 3/6 = 1/2, x²÷x = x, y cancels.',w:[['[x^2|2]','x² on top and x below: 2 − 1 = 1, so just x is left.'],['[3x|6]','The numbers can still be simplified: 3/6 = 1/2.'],['[x|2y]','The y on top and bottom cancel completely.']]}},
+  ['[2x|3]','Put the leftovers together.']],  quiz:{q:'{Simplify fully} [4x|y] · [xy|6x]',a:'[2x|3]',why:'Product is 4x²y / 6xy. 4/6 = 2/3, x²÷x = x, y cancels.',w:[['[2x^2|3]','x² on top and x below leave one x: 2 − 1 = 1.'],['[4x|6]','The numbers can still be simplified: 4/6 = 2/3.'],['[2x|3y]','The y on top and the y on the bottom cancel completely.']]}},
  {label:'Q3 · Top right',prob:'[a^2|3b] · [6b^3|5a^2]',steps:[
   ['[6a^2b^3|15a^2b]','Top: a²·6b³. Bottom: 3b·5a² = 15a²b.'],
   ['[6|15] = [2|5]','Divide the numbers by 3.'],
   ['[a^2|a^2] = 1 {and} [b^3|b] = b^2','a² cancels completely, and b: 3 − 1 = 2.'],
-  ['[2b^2|5]','Put it all together.']],
-  quiz:{q:'{Simplify fully} [b^2|2a] · [4a^3|3b^2]',a:'[2a^2|3]',why:'Product is 4a³b² / 6ab². 4/6 = 2/3, a³÷a = a², b² cancels.',w:[['[4a^2|6]','Simplify the numbers: 4/6 = 2/3.'],['[2a^4|3]','You added the powers. Subtract them: 3 − 1 = 2.'],['[2a^2b^2|3]','b² on the top and bottom cancel completely.']]}},
+  ['[2b^2|5]','Put it all together.']],  quiz:{q:'{Simplify fully} [a^2|3b] · [6b^3|5a^2]',a:'[2b^2|5]',why:'Product is 6a²b³ / 15a²b. 6/15 = 2/5, a² cancels, b³÷b = b².',w:[['[2a^2b^2|5]','a² on the top and bottom cancel completely.'],['[6b^2|15]','The numbers can still be simplified: 6/15 = 2/5.'],['[2b^4|5]','You added the powers. Subtract them: 3 − 1 = 2.']]}},
  {label:'Q3 · Bottom left',prob:'[x|2] ÷ [4|x]',steps:[
   ['[x|2] ÷ [4|x] = [x|2] × [x|4]','Keep, change, flip: turn ÷ into × and flip the second fraction.'],
   ['[x·x|2·4]','Multiply tops together and bottoms together.'],
-  ['[x^2|8]','x·x = x² and 2×4 = 8.']],
-  quiz:{q:'{Simplify} [x|3] ÷ [5|x]',a:'[x^2|15]',why:'Flip the second: x/3 × x/5 = x²/15.',w:[['[15|x^2]','You flipped the first fraction. Keep the first, flip the second.'],['[x|15]','x × x makes x², not x.'],['[5|3]','You forgot to flip. Turn ÷ into × and flip 5/x to x/5.']]}},
+  ['[x^2|8]','x·x = x² and 2×4 = 8.']],  quiz:{q:'{Simplify} [x|2] ÷ [4|x]',a:'[x^2|8]',why:'Flip the second: x/2 × x/4 = x²/8.',w:[['[8|x^2]','You turned the answer upside down. Keep the first, flip only the second.'],['[x|8]','x × x makes x², not x.'],['2','You did not flip. Turn ÷ into × and flip 4/x to x/4.']]}},
  {label:'Q3 · Bottom middle',prob:'[12a|b^2] ÷ [9a|b^2]',steps:[
   ['[12a|b^2] × [b^2|9a]','Keep, change, flip.'],
   ['[12ab^2|9ab^2]','Multiply tops and bottoms.'],
   ['[12|9]','a and b² appear on top and bottom, so they cancel.'],
-  ['[4|3]','Simplify: divide top and bottom by 3.']],
-  quiz:{q:'{Simplify} [10y|x^2] ÷ [15y|x^2]',a:'[2|3]',why:'Flip and multiply: 10y·x² / x²·15y = 10/15 = 2/3.',w:[['[3|2]','You flipped your answer upside down. Only flip the second fraction at the start.'],['[10|15]','You can still simplify: divide top and bottom by 5.'],['[2y|3]','The y on top and bottom cancel.']]}},
+  ['[4|3]','Simplify: divide top and bottom by 3.']],  quiz:{q:'{Simplify} [12a|b^2] ÷ [9a|b^2]',a:'[4|3]',why:'Flip and multiply: 12ab² / 9ab² = 12/9 = 4/3.',w:[['[3|4]','You flipped your answer. Only flip the second fraction at the start.'],['[12|9]','You can still simplify: divide top and bottom by 3.'],['[4a|3b^2]','a and b² are on the top and bottom, so they cancel.']]}},
  {label:'Q3 · Bottom right',prob:'[5xy|7x] ÷ [3y|6]',steps:[
   ['[5xy|7x] × [6|3y]','Keep, change, flip.'],
   ['[30xy|21xy]','Top: 5xy·6 = 30xy. Bottom: 7x·3y = 21xy.'],
   ['[30|21]','xy is on both top and bottom, so it cancels.'],
-  ['[10|7]','Divide top and bottom by 3.']],
-  quiz:{q:'{Simplify} [4xy|5x] ÷ [2y|10]',a:'4',why:'Flip: 4xy/5x × 10/2y = 40xy / 10xy = 4.',w:[['[4y^2|25]','You did not flip. Turn ÷ into × and flip the second fraction.'],['[1|4]','You flipped the first fraction. Keep the first and flip the second.'],['[4y|5]','You simplified the first fraction but forgot to divide by the second.']]}}]},
+  ['[10|7]','Divide top and bottom by 3.']],  quiz:{q:'{Simplify} [5xy|7x] ÷ [3y|6]',a:'[10|7]',why:'Flip: 5xy/7x × 6/3y = 30xy / 21xy = 30/21 = 10/7.',w:[['[7|10]','You flipped your answer. Only flip the second fraction at the start.'],['[30|21]','You can still simplify: divide top and bottom by 3.'],['[5y^2|14]','You did not flip. Turn ÷ into × and flip 3y/6 to 6/3y.']]}}]},
 {n:4,color:'#ff7a1a',emoji:'➕',title:'Simplify using the multiplication exponent law',
- rule:'<b>Rule reminder:</b> $a^m·a^n = a^(m+n)$. Same letter: <i>add</i> the powers. Numbers in front multiply. A letter on its own is $^1$.',
  cards:[
  {label:'Q4 · Box 1',prob:'3^2 × 3^3',steps:[
   ['3^2 × 3^3 = 3^(2+3)','Same base (3), so add the powers.'],
   ['3^5','2 + 3 = 5.'],
-  ['3^5 = 243','3×3×3×3×3 = 243.']],
-  quiz:{q:'{Work out} 2^3 × 2^4',a:'2^7 = 128',why:'Add the powers: 3 + 4 = 7, and 2⁷ = 128.',w:[['4^7','Keep the base the same. Do not multiply the bases.'],['2^12','You multiplied the powers. Add them instead.'],['14','2⁷ means 2 multiplied seven times, not 2 × 7.']]}},
+  ['3^5 = 243','3×3×3×3×3 = 243.']],  quiz:{q:'{Work out} 3^2 × 3^3',a:'3^5 = 243',why:'Add the powers: 2 + 3 = 5, and 3⁵ = 243.',w:[['9^5 = 59049','Keep the base the same. Do not multiply the bases.'],['3^6 = 729','You multiplied the powers. Add them instead.'],['15','3⁵ means 3 multiplied five times, not 3 × 5.']]}},
  {label:'Q4 · Box 2',prob:'x^6 · x^8',steps:[
   ['x^6 · x^8 = x^(6+8)','Same base (x), so add the powers.'],
-  ['x^14','6 + 8 = 14.']],
-  quiz:{q:'{Simplify} y^5 · y^7',a:'y^12',why:'Add the powers: 5 + 7 = 12.',w:[['y^35','You multiplied the powers. Add them.'],['y^2','You subtracted. Subtract is for dividing.'],['2y^12','The base y stays as it is. It does not get a number in front.']]}},
+  ['x^14','6 + 8 = 14.']],  quiz:{q:'{Simplify} x^6 · x^8',a:'x^14',why:'Add the powers: 6 + 8 = 14.',w:[['x^48','You multiplied the powers. Add them.'],['x^2','You subtracted. Subtracting is for dividing.'],['14x','The 14 is the new power, so it goes up high on the x.']]}},
  {label:'Q4 · Box 3',prob:'3b^3 · 7b^3',steps:[
   ['(3×7)·(b^3·b^3)','Numbers multiply with numbers, letters with letters.'],
   ['21·b^(3+3)','3 × 7 = 21, and add the powers of b.'],
-  ['21b^6','3 + 3 = 6.']],
-  quiz:{q:'{Simplify} 4c^2 · 5c^4',a:'20c^6',why:'4 × 5 = 20 and c² · c⁴ = c⁶.',w:[['20c^8','You multiplied the powers. Add them: 2 + 4 = 6.'],['9c^6','The numbers in front multiply: 4 × 5, not 4 + 5.'],['20c^2','You subtracted the powers. Add them.']]}},
+  ['21b^6','3 + 3 = 6.']],  quiz:{q:'{Simplify} 3b^3 · 7b^3',a:'21b^6',why:'3 × 7 = 21 and b³ · b³ = b⁶.',w:[['21b^9','You multiplied the powers. Add them: 3 + 3 = 6.'],['10b^6','The numbers in front multiply: 3 × 7, not 3 + 7.'],['21b^0','You subtracted the powers. Add them when multiplying.']]}},
  {label:'Q4 · Box 4',prob:'8x^2y^3 · 3x^3y',steps:[
   ['8 × 3 = 24','Numbers in front multiply.'],
   ['x^2 · x^3 = x^5','Add the powers of x: 2 + 3 = 5.'],
   ['y^3 · y = y^3 · y^1 = y^4','y on its own is y¹, so 3 + 1 = 4.'],
-  ['24x^5y^4','Put it all together.']],
-  quiz:{q:'{Simplify} 2a^3b · 5ab^4',a:'10a^4b^5',why:'2 × 5 = 10, a: 3 + 1 = 4, b: 1 + 4 = 5.',w:[['10a^4b^4','b on its own is b¹, so b¹ · b⁴ = b⁵.'],['7a^4b^5','Numbers in front multiply: 2 × 5 = 10.'],['10a^3b^4','You multiplied the powers. Add them.']]}}]},
+  ['24x^5y^4','Put it all together.']],  quiz:{q:'{Simplify} 8x^2y^3 · 3x^3y',a:'24x^5y^4',why:'8 × 3 = 24, x: 2 + 3 = 5, y: 3 + 1 = 4.',w:[['24x^5y^3','y on its own is y¹, so y³ · y¹ = y⁴.'],['11x^5y^4','The numbers in front multiply: 8 × 3, not 8 + 3.'],['24x^6y^4','You multiplied the x powers. Add them: 2 + 3 = 5.']]}}]},
 {n:5,color:'#0ea5a4',emoji:'➗',title:'Simplify using the division exponent law',
- rule:'<b>Rule reminder:</b> $a^m ÷ a^n = a^(m−n)$. Same letter: <i>subtract</i> the powers. Numbers in front simplify like a fraction.',
  cards:[
  {label:'Q5 · Box 1',prob:'[2^6|2^4]',steps:[
   ['[2^6|2^4] = 2^(6−4)','Same base (2), so subtract the powers.'],
   ['2^2','6 − 4 = 2.'],
-  ['2^2 = 4','2 × 2 = 4.']],
-  quiz:{q:'{Work out} [3^5|3^3]',a:'9',why:'Subtract the powers: 5 − 3 = 2, and 3² = 9.',w:[['6','3² means 3 × 3, not 3 × 2.'],['1','Keep the base 3 and subtract the powers. Do not divide the bases.'],['3^8','You added the powers. Subtract them when dividing.']]}},
+  ['2^2 = 4','2 × 2 = 4.']],  quiz:{q:'{Work out} [2^6|2^4]',a:'2^2 = 4',why:'Subtract the powers: 6 − 4 = 2, and 2² = 4.',w:[['2^10 = 1024','You added the powers. Subtract them when dividing.'],['1^2 = 1','Keep the base 2 and subtract the powers. Do not divide the bases.'],['8','2² means 2 × 2, not 2 × 4.']]}},
  {label:'Q5 · Box 2',prob:'[x^8|x^3]',steps:[
   ['[x^8|x^3] = x^(8−3)','Same base (x), so subtract the powers.'],
-  ['x^5','8 − 3 = 5.']],
-  quiz:{q:'{Simplify} [m^9|m^2]',a:'m^7',why:'Subtract the powers: 9 − 2 = 7.',w:[['m^11','You added the powers. Subtract them.'],['m^18','You multiplied the powers. Subtract them.'],['m^4','You divided 9 by 2. Subtract: 9 − 2.']]}},
+  ['x^5','8 − 3 = 5.']],  quiz:{q:'{Simplify} [x^8|x^3]',a:'x^5',why:'Subtract the powers: 8 − 3 = 5.',w:[['x^11','You added the powers. Subtract them when dividing.'],['x^24','You multiplied the powers. Subtract them.'],['x^(−5)','The bigger power is on top, so the power stays positive.']]}},
  {label:'Q5 · Box 3',prob:'[18a^5|12a^4]',steps:[
   ['[18|12] = [3|2]','Numbers first: divide top and bottom by 6.'],
   ['[a^5|a^4] = a^(5−4) = a','Subtract the powers.'],
-  ['[3a|2]','Put it together.']],
-  quiz:{q:'{Simplify} [20p^6|15p^5]',a:'[4p|3]',why:'20/15 = 4/3 and p⁶ ÷ p⁵ = p.',w:[['[20p|15]','Simplify the numbers: divide top and bottom by 5.'],['[4p^11|3]','You added the powers. Subtract them.'],['[4|3p]','The p was bigger on top, so one p is left on top.']]}},
+  ['[3a|2]','Put it together.']],  quiz:{q:'{Simplify} [18a^5|12a^4]',a:'[3a|2]',why:'18/12 = 3/2 and a⁵ ÷ a⁴ = a.',w:[['[3a^9|2]','You added the powers. Subtract them when dividing.'],['[18a|12]','Simplify the numbers too: 18/12 = 3/2.'],['[3|2a]','The bigger power of a was on top, so the a is left on top.']]}},
  {label:'Q5 · Box 4',prob:'[25x^3y^4|15xy^2]',steps:[
   ['[25|15] = [5|3]','Divide the numbers by 5.'],
   ['[x^3|x] = x^2','3 − 1 = 2.'],
   ['[y^4|y^2] = y^2','4 − 2 = 2.'],
-  ['[5x^2y^2|3]','Put it together.']],
-  quiz:{q:'{Simplify} [14a^4b^3|21a^2b]',a:'[2a^2b^2|3]',why:'14/21 = 2/3, a: 4 − 2 = 2, b: 3 − 1 = 2.',w:[['[14a^2b^2|21]','Simplify the numbers: 14/21 = 2/3.'],['[2a^6b^4|3]','You added the powers. Subtract them.'],['[2a^2b^3|3]','b on the bottom is b¹, so 3 − 1 = 2.']]}}]},
+  ['[5x^2y^2|3]','Put it together.']],  quiz:{q:'{Simplify} [25x^3y^4|15xy^2]',a:'[5x^2y^2|3]',why:'25/15 = 5/3, x: 3 − 1 = 2, y: 4 − 2 = 2.',w:[['[5x^3y^2|3]','x³ ÷ x leaves x², so subtract one x: 3 − 1 = 2.'],['[25x^2y^2|15]','Simplify the numbers too: 25/15 = 5/3.'],['[5x^4y^6|3]','You added the powers. Subtract them when dividing.']]}}]},
 {n:6,color:'#1aa05a',emoji:'🚀',title:'Simplify using the raising a power to a power exponent law',
- rule:'<b>Rule reminder:</b> $(a^m)^n = a^(m×n)$. <i>Multiply</i> the powers. The number in front is raised to the power too.',
  cards:[
  {label:'Q6 · Box 1',prob:'(3^2)^2',steps:[
   ['(3^2)^2 = 3^(2×2)','A power of a power: multiply the powers.'],
   ['3^4','2 × 2 = 4.'],
-  ['3^4 = 81','3×3×3×3 = 81.']],
-  quiz:{q:'{Work out} (2^3)^2',a:'2^6 = 64',why:'Multiply the powers: 3 × 2 = 6, and 2⁶ = 64.',w:[['32','You added the powers (2⁵). Multiply them.'],['12','2⁶ means 2 multiplied six times, not 2 × 6.'],['2^9 = 512','You worked out 3² as the power. Just multiply 3 × 2.']]}},
+  ['3^4 = 81','3×3×3×3 = 81.']],  quiz:{q:'{Work out} (3^2)^2',a:'3^4 = 81',why:'Multiply the powers: 2 × 2 = 4, and 3⁴ = 81.',w:[['3^5 = 243','You added the powers. Multiply them.'],['6^2 = 36','Keep the base 3. Do not multiply the base by the power.'],['12','3⁴ means 3 × 3 × 3 × 3, not 3 × 4.']]}},
  {label:'Q6 · Box 2',prob:'(y^5)^4',steps:[
   ['(y^5)^4 = y^(5×4)','Multiply the powers.'],
-  ['y^20','5 × 4 = 20.']],
-  quiz:{q:'{Simplify} (k^3)^5',a:'k^15',why:'Multiply the powers: 3 × 5 = 15.',w:[['k^8','You added the powers. Multiply them.'],['k^2','You subtracted. Multiply the powers.'],['15k','The 15 is the new power, so it goes up high on the k.']]}},
+  ['y^20','5 × 4 = 20.']],  quiz:{q:'{Simplify} (y^5)^4',a:'y^20',why:'Multiply the powers: 5 × 4 = 20.',w:[['y^9','You added the powers. Multiply them.'],['y^1','You subtracted. Multiply the powers.'],['20y','The 20 is the new power, so it goes up high on the y.']]}},
  {label:'Q6 · Box 3',prob:'(b^3)^6',steps:[
   ['(b^3)^6 = b^(3×6)','Multiply the powers.'],
-  ['b^18','3 × 6 = 18.']],
-  quiz:{q:'{Simplify} (n^4)^3',a:'n^12',why:'Multiply the powers: 4 × 3 = 12.',w:[['n^7','You added the powers. Multiply them.'],['n^64','You worked out 4³. Just multiply 4 × 3.'],['12n','The 12 is the new power, so it goes up high on the n.']]}},
+  ['b^18','3 × 6 = 18.']],  quiz:{q:'{Simplify} (b^3)^6',a:'b^18',why:'Multiply the powers: 3 × 6 = 18.',w:[['b^9','You added the powers. Multiply them.'],['b^729','You worked out 3⁶. Just multiply 3 × 6.'],['18b','The 18 is the new power, so it goes up high on the b.']]}},
  {label:'Q6 · Box 4',prob:'(2x^2)^3',steps:[
   ['(2x^2)^3 = 2^3 · (x^2)^3','The power goes on everything inside the bracket, including the 2.'],
   ['2^3 = 8','2×2×2 = 8.'],
   ['(x^2)^3 = x^6','Multiply the powers: 2 × 3 = 6.'],
-  ['8x^6','Put it together.']],
-  quiz:{q:'{Simplify} (3y^4)^2',a:'9y^8',why:'3² = 9 and (y⁴)² = y⁸.',w:[['3y^8','The 3 gets squared too: 3² = 9.'],['6y^8','Squaring 3 means 3 × 3, not 3 × 2.'],['9y^6','Multiply the powers: 4 × 2 = 8, not 4 + 2.']]}}]},
+  ['8x^6','Put it together.']],  quiz:{q:'{Simplify} (2x^2)^3',a:'8x^6',why:'2³ = 8 and (x²)³ = x⁶.',w:[['2x^6','The 2 gets cubed too: 2³ = 8.'],['6x^6','Cubing 2 means 2 × 2 × 2, not 2 × 3.'],['8x^5','Multiply the powers: 2 × 3 = 6, not 2 + 3.']]}}]},
 {n:7,color:'#e0334c',emoji:'🏆',title:'Simplify by using the exponents law',
- rule:'<b>Rule reminder:</b> combine the laws. Do the <i>brackets first</i>, then divide or multiply: add when multiplying, subtract when dividing, multiply for power of a power.',
  cards:[
  {label:'Q7 · Top left',prob:'(a^4 · a^6)^2',steps:[
   ['a^4 · a^6 = a^(4+6) = a^10','Brackets first: multiplying, so add the powers.'],
   ['(a^10)^2 = a^(10×2)','Power of a power: multiply the powers.'],
-  ['a^20','10 × 2 = 20.']],
-  quiz:{q:'{Simplify} (b^2 · b^3)^4',a:'b^20',why:'Bracket: b⁵. Then (b⁵)⁴ = b²⁰.',w:[['b^9','The 4 multiplies the power: 5 × 4, not 5 + 4.'],['b^14','The 4 applies to the whole bracket, not just b³.'],['b^24','Add inside the bracket first: 2 + 3 = 5, then × 4.']]}},
+  ['a^20','10 × 2 = 20.']],  quiz:{q:'{Simplify} (a^4 · a^6)^2',a:'a^20',why:'Bracket: a¹⁰. Then (a¹⁰)² = a²⁰.',w:[['a^12','The 2 multiplies the power: 10 × 2, not 10 + 2.'],['a^16','The 2 applies to the whole bracket, not just a⁶.'],['a^24','Add inside the bracket first: 4 + 6 = 10, then × 2.']]}},
  {label:'Q7 · Top right',prob:'[y^12|y^2 · y^6]',steps:[
   ['y^2 · y^6 = y^8','Bottom first: multiplying, so add the powers.'],
   ['[y^12|y^8] = y^(12−8)','Now dividing, so subtract the powers.'],
-  ['y^4','12 − 8 = 4.']],
-  quiz:{q:'{Simplify} [z^10|z^3 · z^4]',a:'z^3',why:'Bottom: z⁷. Then 10 − 7 = 3.',w:[['z^7','You ignored the z⁴. Do the whole bottom first: 3 + 4 = 7.'],['z^6','Combine the bottom first: z³ · z⁴ = z⁷, then 10 − 7.'],['z^17','Subtract the bottom from the top. Do not add.']]}},
+  ['y^4','12 − 8 = 4.']],  quiz:{q:'{Simplify} [y^12|y^2 · y^6]',a:'y^4',why:'Bottom: y⁸. Then 12 − 8 = 4.',w:[['y^10','You ignored the y⁶. Do the whole bottom first: 2 + 6 = 8.'],['y^6','You ignored the y². Do the whole bottom first: 2 + 6 = 8.'],['y^20','Subtract the bottom from the top. Do not add.']]}},
  {label:'Q7 · Bottom left',prob:'[t^8|t^3] · t^4',steps:[
   ['[t^8|t^3] = t^5','Divide first: subtract the powers, 8 − 3 = 5.'],
   ['t^5 · t^4 = t^(5+4)','Now multiply, so add the powers.'],
-  ['t^9','5 + 4 = 9.']],
-  quiz:{q:'{Simplify} [p^9|p^4] · p^2',a:'p^7',why:'p⁹ ÷ p⁴ = p⁵, then p⁵ · p² = p⁷.',w:[['p^3','The p² is multiplied, so add its power, do not subtract.'],['p^5','You forgot to multiply by p² at the end.'],['p^15','Dividing means subtract: 9 − 4 = 5 first.']]}},
+  ['t^9','5 + 4 = 9.']],  quiz:{q:'{Simplify} [t^8|t^3] · t^4',a:'t^9',why:'t⁸ ÷ t³ = t⁵, then t⁵ · t⁴ = t⁹.',w:[['t^1','Only divide by t³. The t⁴ is multiplied, so add its power.'],['t^5','You forgot to multiply by t⁴ at the end.'],['t^15','Dividing means subtract: 8 − 3 = 5 first.']]}},
  {label:'Q7 · Bottom right',prob:'[x^10 · (x^2)^5|x]',steps:[
   ['(x^2)^5 = x^10','Brackets first: multiply the powers, 2 × 5 = 10.'],
   ['x^10 · x^10 = x^20','Multiplying, so add the powers.'],
   ['[x^20|x] = x^(20−1)','Dividing by x (which is x¹), so subtract.'],
-  ['x^19','20 − 1 = 19.']],
-  quiz:{q:'{Simplify} [y^6 · (y^3)^2|y^2]',a:'y^10',why:'(y³)² = y⁶, y⁶ · y⁶ = y¹², then y¹² ÷ y² = y¹⁰.',w:[['y^12','You forgot to divide by y² at the end.'],['y^9','(y³)² is y⁶, because you multiply 3 × 2.'],['y^14','Dividing by y² means subtract: 12 − 2.']]}}]}
+  ['x^19','20 − 1 = 19.']],  quiz:{q:'{Simplify} [x^10 · (x^2)^5|x]',a:'x^19',why:'(x²)⁵ = x¹⁰, x¹⁰ · x¹⁰ = x²⁰, then x²⁰ ÷ x = x¹⁹.',w:[['x^20','You forgot to divide by x at the end.'],['x^16','(x²)⁵ is x¹⁰, because you multiply 2 × 5.'],['x^21','Dividing by x means subtract: 20 − 1.']]}}]}
 ];
 
 (function(){
@@ -466,7 +430,7 @@ function speakText(text,onend){ /* returns true if speech started */
   if(!CANSPEAK||!soundOn)return false;
   try{
     SYN.cancel();var tok=++spTok;
-    var u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=0.95;u.pitch=1;if(voice)u.voice=voice;
+    var u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=0.85;u.pitch=1;if(voice)u.voice=voice;
     var fin=function(){if(tok===spTok&&onend)onend();};
     u.onend=fin;u.onerror=fin;
     SYN.speak(u);return true;
@@ -482,17 +446,16 @@ function boom(node,xp){
 }
 
 /* ---------- slides ---------- */
-function stripRule(r){return r.replace(/^\s*<b>Rule reminder:<\/b>\s*/,'');}
 function buildSlides(sec,card,first){
   var out=[],st=card.steps,n=st.length;
-  if(first)out.push({kind:'rule',tag:'Rule reminder',big:'Remember the rule',small:rich(stripRule(sec.rule)),say:'Rule reminder. '+spokenRich(stripRule(sec.rule))});
   out.push({kind:'prob',tag:card.label,big:MM(card.prob),math:true,small:'Here is the problem.',say:'The problem. '+sp(card.prob)});
   for(var k=0;k<n-1;k++)out.push({kind:'step',tag:'Step '+(k+1)+' of '+(n-1),big:MM(st[k][0]),math:true,small:plain(st[k][1]),say:'Step '+(k+1)+'. '+sp(st[k][0])+'. '+spokenRich(st[k][1])});
   var L=st[n-1];
   out.push({kind:'ans',tag:'Answer',big:'<span class="hl">'+MM(L[0])+'</span>',math:true,small:plain(L[1]),say:'Answer. '+sp(L[0])+'. '+spokenRich(L[1])});
   return out;
 }
-function estMs(s){var t=(s.say||'');return Math.max(3500,t.length*65);}
+function estMs(s){var t=(s.say||'');return Math.max(9000,t.length*75);}
+var autoOn=false;
 
 /* ---------- state ---------- */
 var view='home',LV=null,PL=null,Q=null,R=null,loop=0;
@@ -518,7 +481,7 @@ function renderHome(){
         el('div',{class:'foot'},[stars(lvlStars(s.n)),el('button',{class:'btn primary',type:'button',onclick:function(){startLevel(s.n);}},['Play ',el('kbd',{text:String(s.n)})])])])]));
   });
   app.append(el('div',{class:'wrap'},[
-    el('header',{class:'hero'},[el('div',{},[el('h1',{},['Grade 8 Unit 2 — Homework ',el('span',{text:'Week 9'})]),el('p',{class:'muted',text:'Maths revision. Play any level in any order.'})]),
+    el('header',{class:'hero'},[el('div',{},[el('h1',{},['Grade 8 Unit 2 — Homework ',el('span',{text:'Week 9'})]),el('p',{class:'muted',text:'Maths revision: the questions from your Week 9 homework. Play any level in any order.'})]),
       el('div',{class:'stats'},[el('div',{class:'stat'},[el('b',{id:'xp',text:String(P.xp)}),el('small',{text:'XP'})]),el('div',{class:'stat'},[el('b',{text:String(P.best)}),el('small',{text:'Best streak'})]),sndBtn()])]),
     el('div',{class:'barrow'},[el('div',{class:'bar',role:'progressbar','aria-valuemin':'0','aria-valuemax':String(tot),'aria-valuenow':String(cl)},[el('i',{style:'width:'+(100*cl/tot)+'%'})]),el('span',{text:cl+' of '+tot+' levels cleared'})]),
     grid,
@@ -530,7 +493,7 @@ function startLevel(n){
   var sec=SECTIONS.filter(function(s){return s.n===n;})[0];if(!sec)return;
   var ideas=sec.cards.map(function(c,i){return buildSlides(sec,c,i===0);});
   LV={sec:sec,ideas:ideas,first:0,hints:0,streak:0,total:sec.cards.length};
-  PL={u:0,i:0,paused:false,el:0,speaking:false,waitEnd:false,endEl:0,est:3500,last:0,started:true};
+  PL={u:0,i:0,paused:false,el:0,speaking:false,waitEnd:false,endEl:0,est:9000,last:0,started:true};
   go('play');beginSlide(false);runLoop();
 }
 function cur(){return LV.ideas[PL.u][PL.i];}
@@ -541,9 +504,7 @@ function renderPlay(){
   var sec=LV.sec,sl=LV.ideas[PL.u],n=sl.length,s=sl[PL.i];
   var ticks=el('div',{class:'ticks'});PL.fills=[];
   for(var i=0;i<n;i++){var f=el('i');PL.fills.push(f);ticks.append(el('div',{class:'tick'+(i<PL.i?' done':'')},[f]));}
-  var big=el('div',{class:'big'+(s.math?' mathy':''),html:s.kind==='rule'||s.math?s.big:''});
-  if(!s.math&&s.kind!=='rule'){big.textContent=s.big;}
-  if(s.kind==='rule'){big.innerHTML='';var w=s.big.split(' ');big.append(w.slice(0,-1).join(' ')+' ',el('u',{text:w[w.length-1]}));}
+  var big=el('div',{class:'big mathy',html:s.big});
   var inner=el('div',{class:'scene v'+(PL.i%4)},[el('div',{class:'tag',text:s.tag}),big,s.small?el('div',{class:'small',html:s.small}):null]);
   PL.pausedEl=el('div',{class:'paused',text:'Paused',hidden:!PL.paused});
   var stage=el('div',{class:'stage',style:'--c:'+sec.color,onclick:togglePause},[el('div',{class:'blob a'}),el('div',{class:'blob b'}),el('div',{class:'blob c'}),ticks,inner,PL.pausedEl]);
@@ -555,17 +516,19 @@ function renderPlay(){
         el('button',{class:'btn small',type:'button',onclick:function(){skip(-1);}},['Back ',el('kbd',{text:'←'})]),
         PL.ppBtn,
         el('button',{class:'btn small',type:'button',onclick:function(){skip(1);}},['Next ',el('kbd',{text:'→'})]),
+        (PL.autoBtn=el('button',{class:'btn small autobtn',type:'button',title:'Move on by itself',onclick:toggleAuto})),
         el('button',{class:'btn primary small',type:'button',onclick:startQuiz},['Skip to questions ',el('kbd',{text:'Enter'})])]),
-      el('div',{class:'hint',text:'Click the slide to pause.'})])]));
-  paintTick();
+      el('div',{class:'hint',text:'Daniel reads each slide once. Press Next when you are ready.'})])]));
+  paintAuto();paintTick();
 }
 function paintPP(){if(!PL.ppBtn)return;clear(PL.ppBtn);PL.ppBtn.append(PL.paused?'Resume ':'Pause ',el('kbd',{text:'Space'}));PL.ppBtn.setAttribute('aria-pressed',PL.paused?'true':'false');}
 function beginSlide(keepEl){ /* speak (or time) the current slide */
   var s=cur();if(!keepEl){PL.el=0;PL.endEl=0;}
   PL.last=0;PL.est=estMs(s);PL.waitEnd=false;PL.speaking=false;
   if(PL.paused){stopSpeech();return;}
-  var ok=speakText(s.say,function(){if(!PL||view!=='play')return;PL.waitEnd=false;PL.speaking=false;PL.endEl=PL.el+1200;});
-  PL.speaking=ok;PL.waitEnd=ok;if(!ok)PL.endEl=PL.est;
+  PL.endEl=0;
+  var ok=speakText(s.say,function(){if(!PL||view!=='play')return;PL.waitEnd=false;PL.speaking=false;if(autoOn)PL.endEl=PL.el+5000;});
+  PL.speaking=ok;PL.waitEnd=ok;if(!ok&&autoOn)PL.endEl=PL.est;
 }
 function togglePause(){
   if(!PL||view!=='play')return;PL.paused=!PL.paused;PL.last=0;
@@ -581,13 +544,17 @@ function skip(d){
   else if(ni>=LV.ideas[u].length){if(u<LV.total-1){u++;ni=0;}else{startQuiz();return;}}
   PL.u=u;PL.i=ni;PL.el=0;PL.endEl=0;PL.last=0;clear(app);renderPlay();beginSlide(false);
 }
+function toggleAuto(){autoOn=!autoOn;
+  if(PL){if(!autoOn)PL.endEl=0;else if(!PL.waitEnd&&!PL.speaking)PL.endEl=soundOn&&CANSPEAK?PL.el+5000:Math.max(PL.est,PL.el+1000);}
+  paintAuto();}
+function paintAuto(){if(!PL||!PL.autoBtn)return;PL.autoBtn.textContent='Auto-play: '+(autoOn?'On':'Off');PL.autoBtn.setAttribute('aria-pressed',autoOn?'true':'false');}
 function paintTick(){if(!PL||!PL.fills)return;var f=PL.fills[PL.i];if(f)f.style.width=Math.min(100,100*PL.el/Math.max(1,PL.endEl||PL.est))+'%';}
 function runLoop(){stopLoop();loop=setInterval(function(){
   if(view!=='play'||!PL)return;
   var now=performance.now();if(PL.paused){PL.last=0;return;}
   if(PL.last)PL.el+=now-PL.last;PL.last=now;
   paintTick();
-  var safety=PL.waitEnd&&PL.el>Math.max(25000,PL.est*3);
+  var safety=autoOn&&PL.waitEnd&&PL.el>Math.max(25000,PL.est*3);
   if((PL.endEl&&PL.el>=PL.endEl)||safety){skip(1);}
 },100);}
 
